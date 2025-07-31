@@ -1,0 +1,157 @@
+---
+name: Owais
+surname: Raza
+position: "Researcher"
+pronouns: he/him
+address: "Omaha, NE - US"
+phone: (206) 349 4773
+www: oraza.github.io
+email: "ow.raza@hotmail.com"
+github: oraza
+googlescholar: weiuxRkAAAAJ&hl
+linkedin: owraza
+orcid: 0000-0002-3410-441X
+date: "`r format(Sys.time(), '%B %Y')`"
+output:
+  vitae::awesomecv:
+    page_total: true
+    pandoc_args: ["--pdf-engine=xelatex"]
+header-includes:
+  - \usepackage{xcolor}  # Required for custom colors
+  - \usepackage{fontspec}  # Essential for custom font control
+  - \renewcommand{\bodyfont}{\fontspec{Arial Narrow}}  # Main body text
+  - \renewcommand{\bodyfontlight}{\fontspec{Arial Narrow}}  # Fixes descriptions in experience/education
+  - \renewcommand{\headerfont}{\fontspec{Arial Narrow}}  # Header elements (removed \bfseries)
+  - \renewcommand{\footerfont}{\fontspec{Arial Narrow}}  # Footer text
+  - \renewcommand{\descriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{darktext}#1}}  # Explicitly sets description style
+  - \definecolor{myPink}{HTML}{e91d63}  # Your custom highlight color
+  - \renewcommand{\descriptionstyle}[1]{\parbox[t]{17cm}{\bodyfontlight\upshape\color{darktext}#1}}
+  - \renewcommand{\entrytitlestyle}[1]{\parbox[t]{5cm}{\bodyfont\bfseries\color{darktext}#1}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+```
+
+
+# Summary
+\fontspec{Arial Narrow}
+\fontsize{10}{1em}
+PhD-trained epidemiologist with 15+ years of experience in public health research, teaching, and mentorship. Specializes in \textbf{\textcolor{myPink}{quantitative data analysis}} and \textbf{\textcolor{myPink}{data visualization}} using R, STATA, and SPSS. Background in \textbf{\textcolor{myPink}{spatial epidemiology}}, \textbf{\textcolor{myPink}{maternal and child health}}, and \textbf{\textcolor{myPink}{curriculum development}}. With a strong commitment to \textbf{\textcolor{myPink}{diversity}}, \textbf{\textcolor{myPink}{equity}}, and \textbf{\textcolor{myPink}{inclusion}} through my research and community engagement, I promote \textbf{\textcolor{myPink}{open science}} and embrace a growth mindset, always seeking to learn and apply new methodologies. Beyond my academic achievements, I am a strong proponent of work-life balance and gender equality.
+
+
+
+# Education
+
+```{r}
+library(tibble)
+tribble(
+  ~ Degree, ~ Year, ~ Institution, ~ Where,
+  "Ph.D.", "2018", "Tehran University of Medical Sciences", "Tehran, Iran",
+  "MBBS", "2006", "Ziauddin University", "Karachi, Pakistan",
+) %>%
+  detailed_entries(Institution, Where, Degree, Year)
+```
+
+# Experience
+
+```{r}
+library(tibble)
+library(vitae)
+tribble(
+  ~what, ~when, ~with, ~where, ~details,
+  "Research Mentor", "Jul 2024 – Present", "BMY Health, Canada", "Remote",
+  list("Conducting data analysis workshops (SPSS and STATA) for internship programs in collaboration with BMY Health (Pakistan).", "Served on the Scientific Review Committee (SRC) and the Research Ethics Board (REB)."),
+  
+  "Senior Researcher", "Jun 2024 – Present", "BMY Health, Pakistan", "Remote",
+  list("Directed the Research Internship Program (Dec 2024 Cohort)",
+       "Mentored interns, developed training modules, assessed intern goals, and provided guidance on research project design and execution."),
+  
+  "Assistant Professor", "Feb 2020 – Jul 2024", "School of Public Health, Dow University of Health Sciences", "Karachi, Pakistan",
+  list("Developed public health curricula and taught UG/PG courses in epidemiology, biostatistics, and research methods.",
+       "Supervised student research and theses."),
+  
+  "Deputy Director (Research)", "Nov 2018 – Jan 2020", "PPHI Sindh", "Karachi, Pakistan",
+  list("Led research initiatives across 22 districts, using DHIS data to support program monitoring and planning.",
+       "Conducted healthcare facility assessment projects and led a warehouse assessment across all 22 districts.",
+       "Oversaw key institutional studies, including A Report on Cesarean Section Audit and Warehouse Assessment of PPHI Sindh.",
+       "Established the Institutional Review Board (IRB) to ensure ethical research practices across all projects."),
+  
+  "Teaching Assistant", "Apr 2014 – Sep 2017", "Department of Epidemiology & Biostatistics, Tehran University of Medical Sciences", "Tehran, Iran",
+  list("Supervised two rounds of Community Assessment Program as a part of MPH program.",
+       "Co-supervised MPH theses",
+       "Facilitated research methodology and epidemiology courses, and conducted statistical software workshops (SPSS, STATA, R)."),
+  
+  "Research Assistant", "May 2013 – Dec 2014", "Non-Communicable Diseases Research Center, Tehran University of Medical Sciences", "Tehran, Iran", 
+  list("Coordinated maternal and child health studies.", "Contributed to a national and sub-national burden of disease analysis on maternal conditions in Iran."),
+  
+  "Lecturer", "Feb 2008 – Sep 2012", "Ziauddin University", "Karachi, Pakistan",
+  list("Taught epidemiology and biostatistics moduls.", "Led PBL sessions, supervised student research, and conducted SPSS workshops for medical students.")) %>% 
+  detailed_entries(with, where, what, when, details)
+```
+
+
+\newpage
+
+# SKILLS
+```{r}
+tribble(
+  ~Skill, ~Description,
+  "R, SPSS, STATA", "Statistical programming, data management, advanced analysis, and visualization.",
+  "ArcGIS, GWR, Geospatial Analysis", "Spatial data processing, mapping, and geographic analysis.",
+  "Scientific Writing, Data Visualization, Peer Review", "Drafting academic papers, reports, grant proposals, presenting data visually, and reviewing manuscripts for scientific journals.",
+  "Project Management, Ethical Review & Compliance, Open Science Practices", "Leading research projects, ensuring ethical standards and IRB compliance, and promoting transparency and reproducibility in research."
+) %>%
+  detailed_entries(Skill, Description)
+  
+```
+# INVITED TALK:
+\color{black}
+\fontsize{11pt}{1.5em}
+* May 2023 - 1st Family Medicine Research Day: \textbf{\textcolor{myPink}{Fifty Shades of Medical Research}} hosted by Department of Family medicine, Indus Hospital and Health Network.
+
+* Jan 2023 - Quality of Human Resources in Health: \textbf{\textcolor{myPink}{Public Health and Research \& Development (R\&D) Context}} hosted by Ziauddin University.
+
+* Aug 2022 - Moderated Talk for \textbf{\textcolor{myPink}{Ex-Faculty Talk Series: Dr Amir Omair (Ex-faculty member of Department of Community Health Sciences, Ziauddin University)}} hosted by Ziauddin University.
+
+* Dec 2021 - Moderated session at \textbf{\textcolor{myPink}{International Conference on SDGs: Moving Towards Population Health \& Wellbeing}}, organized by Dow University of Health Sciences.
+
+* Dec 2021 - Scientific Session on \textbf{\textcolor{myPink}{Research, Education and The Way Forward: The Good, The Bad \& The Ugly of Medical Research}} hosted by Ziauddin University.
+
+* May 2020 - \textbf{\textcolor{myPink}{COVID Session \# 7: Public Health, Epidemiology \& Clinical Research}} hosted online by Ziauddin Alumni Association.
+
+# Peer Review Activities:
+\color{black}
+\fontsize{11pt}{1.3em}
+* Journal of Health, Population and Nutrition
+* International Journal for Equity in Health
+* Journal of Current Ophthalmology
+* BMC Health Services Research
+* PLOS Global Public Health
+* Archives of Public Health
+* Discover Mental Health
+* Discover Public Health
+* BMC Public Health
+* Scientific Reports
+* BMJ Open
+* Midwifery
+* Heliyon
+
+# Publications
+\fontspec{Arial Narrow}
+\color{black}
+\fontsize{11pt}{1em}
+```{r}
+library(dplyr)
+
+bibliography_entries("publications.bib") %>%
+  arrange(desc(issued))
+
+```
+
+
+
+
+
+
