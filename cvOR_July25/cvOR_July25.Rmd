@@ -98,7 +98,7 @@ tribble(
 ```{r}
 tribble(
   ~Skill, ~Description,
-  "R, SPSS, STATA", "Statistical programming, data management, advanced analysis, and visualization.",
+  "R (Rstudio/RMarkdown/Quarto/Positron), SPSS, STATA", "Statistical programming, survey-weighted and multi-level/mixed effects modeling for longitudinal and nested data, advanced data visualization, and reproducible reporting.",
   "ArcGIS, GWR, Geospatial Analysis", "Spatial data processing, mapping, and geographic analysis.",
   "Scientific Writing, Data Visualization, Peer Review", "Drafting academic papers, reports, grant proposals, presenting data visually, and reviewing manuscripts for scientific journals.",
   "Project Management, Ethical Review & Compliance, Open Science Practices", "Leading research projects, ensuring ethical standards and IRB compliance, and promoting transparency and reproducibility in research."
