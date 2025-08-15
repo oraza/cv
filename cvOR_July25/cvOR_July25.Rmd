@@ -73,13 +73,13 @@ tribble(
        "Supervised student research and theses."),
   
   "Deputy Director (Research)", "Nov 2018 – Jan 2020", "PPHI Sindh", "Karachi, Pakistan",
-  list("Led research initiatives across 22 districts, using DHIS data to support program monitoring and planning.",
+  list("Directed research initiatives across 22 districts, leveraging DHIS data to inform program planning, improve reporting accuracy, and support evidence-based decision-making.",
        "Conducted healthcare facility assessment projects and led a warehouse assessment across all 22 districts.",
        "Oversaw key institutional studies, including A Report on Cesarean Section Audit and Warehouse Assessment of PPHI Sindh.",
        "Established the Institutional Review Board (IRB) to ensure ethical research practices across all projects."),
   
   "Teaching Assistant", "Apr 2014 – Sep 2017", "Department of Epidemiology & Biostatistics, Tehran University of Medical Sciences", "Tehran, Iran",
-  list("Supervised two rounds of Community Assessment Program as a part of MPH program.",
+  list("Supervised two rounds of Community Assessment Program based on North Carolina Community Health Assessment as a part of MPH program.",
        "Co-supervised MPH theses",
        "Facilitated research methodology and epidemiology courses, and conducted statistical software workshops (SPSS, STATA, R)."),
   
